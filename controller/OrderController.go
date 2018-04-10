@@ -44,7 +44,7 @@ func (ctrl *OrderController) SubscribeOrderPath(ctx *gin.Context) {
 
 //查询
 func (ctrl *OrderController) GetOrderPath(ctx *gin.Context) {
-	lss := GetPassengerLbsResService()
+	lss := GetOrderPathService()
 	common.ResultOk(ctx, lss.GetOrderPath(1))
 }
 
